@@ -7,6 +7,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -25,6 +39,7 @@ html {
 body, h1, h2, h3, h4, p,
 figure, blockquote, dl, dd {
   margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -113,7 +128,7 @@ body {
     display: flex;
 }
 
-.flex-column {
+.flex-col {
     flex-direction: column;
 }
 
@@ -122,8 +137,16 @@ body {
     justify-content: center;
 }
 
+.align-start {
+    align-items: flex-start;
+}
+
 .align-center {
     align-items: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
 }
 
 .justify-center {
@@ -144,4 +167,54 @@ body {
 
 footer {
     padding: 1rem;
+}
+
+/* Card */
+
+.card {
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 8px 8px rgba(0, 0, 0, 1);
+    padding: 24px;
+    max-width: 384px;
+    width: 90%;
+
+    img.hero {
+      border-radius: 10px;
+    }
+
+    .content {
+      margin-top: 24px;
+      gap: 12px;
+
+      .tag {
+        background-color: var(--custom-yellow);
+        color: var(--black);
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-weight: 800;
+        font-size: 1rem;
+      }
+
+      .description {
+        color: var(--grey);
+        font-size: 0.9rem;
+      }
+    }
+
+    .author {
+      margin-top: 24px;
+      gap: 12px;
+
+      img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+      }
+
+      .author-name {
+        font-weight: 800;
+        font-size: .9rem;
+      }
+    }
 }
