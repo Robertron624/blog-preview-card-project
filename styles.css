@@ -107,6 +107,18 @@ textarea:not([rows]) {
     --black: hsl(0, 0%, 7%);
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 body {
     font-family: 'Figtree', sans-serif, Arial, Helvetica;
     font-size: 16px;
@@ -176,57 +188,57 @@ footer {
 /* Card */
 
 .card {
-    background-color: var(--white);
-    border-radius: 20px;
-    box-shadow: 8px 8px rgba(0, 0, 0, 1);
-    padding: 24px;
-    max-width: 384px;
-    width: 87.25%;
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 8px 8px rgba(0, 0, 0, 1);
+  padding: 24px;
+  max-width: 384px;
+  width: 87.25%;
+}
 
-    img.hero {
-      border-radius: 10px;
-    }
+.card img.hero {
+  border-radius: 10px;
+}
 
-    .content {
-      margin-top: 24px;
-      gap: 12px;
+.card .content {
+  margin-top: 24px;
+  gap: 12px;
+}
 
-      .tag {
-        background-color: var(--custom-yellow);
-        color: var(--black);
-        padding: 4px 12px;
-        border-radius: 4px;
-        font-weight: 800;
-        font-size: 1rem;
-      }
+.card .content .tag {
+  background-color: var(--custom-yellow);
+  color: var(--black);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 1rem;
+}
 
-      a .title {
-        transition: color 0.3s ease;
-      }
+.card .content a .title {
+  transition: color 0.3s ease;
+}
 
-      a .title:hover {
-        color: var(--custom-yellow);
-      }
+.card .content a .title:hover {
+  color: var(--custom-yellow);
+}
 
-      .description {
-        color: var(--grey);
-        font-size: 0.9rem;
-      }
-    }
+.card .content .description {
+  color: var(--grey);
+  font-size: 0.9rem;
+}
 
-    .author {
-      margin-top: 24px;
-      gap: 12px;
+.card .author {
+  margin-top: 24px;
+  gap: 12px;
+}
 
-      img {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-      }
+.card .author img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
 
-      .author-name {
-        font-weight: 800;
-        font-size: .9rem;
-      }
-    }
+.card .author .author-name {
+  font-weight: 800;
+  font-size: .9rem;
 }
