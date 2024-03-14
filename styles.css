@@ -67,6 +67,10 @@ a:not([class]) {
   color: currentColor;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Make images easier to work with */
 img,
 picture {
@@ -177,7 +181,7 @@ footer {
     box-shadow: 8px 8px rgba(0, 0, 0, 1);
     padding: 24px;
     max-width: 384px;
-    width: 90%;
+    width: 87.25%;
 
     img.hero {
       border-radius: 10px;
@@ -194,6 +198,14 @@ footer {
         border-radius: 4px;
         font-weight: 800;
         font-size: 1rem;
+      }
+
+      a .title {
+        transition: color 0.3s ease;
+      }
+
+      a .title:hover {
+        color: var(--custom-yellow);
       }
 
       .description {
